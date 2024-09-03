@@ -1,0 +1,138 @@
+
+/*               ===  BreakPoints  ===            */
+
+/* =========  MediaQuries Desktop  ============  */
+@media (max-width:1200px){
+          html{
+               font-size:55%;
+          }
+     }
+     /* =========  MediaQuries Tab  ============  */
+     @media (max-width:991px){
+          .header{
+               padding:2rem 3%;
+          }
+          section{
+               padding:10rem 3% 2rem;
+          }
+          .services,.portfolio{
+               padding-bottom:7rem
+          }
+          .contact{
+               min-height:auto;
+          }
+          .footer{
+               padding:2rem 3%;
+          }
+     }
+     
+     
+     @media (max-width:768px){
+          .menu-icon{
+               display: inline-block;
+               position: absolute;
+               right:2rem;
+               cursor: pointer;
+               z-index: 1;
+          }
+          .navbar{
+               position: absolute;
+               top:0;
+               right:0;
+               background: var(--second-bg-color);
+               border-left: 1px solid var(--bg-color);
+               display: none;
+               grid-template-rows: repeat(5,1fr);
+               gap: 5rem;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               width: 70vw;
+               height:100vh;
+               animation:move-left .5s ease-out;
+               transform-origin: top right;
+               box-shadow: 0 0 3rem var(--bg-color);
+          }
+          .navbar.active{
+               display:flex;
+          }
+          .navbar a {
+               display: block;
+               font-size: 2rem;
+               /* margin: 3rem 0; */
+          }
+          .home{
+               flex-direction: column-reverse;
+               justify-content: center;
+          }
+          .home-content-left h1{
+               font-size: 4rem;
+          }
+          .home-content-left h3{
+               font-size: 1.6rem;
+          }
+          .home-content-right{
+               min-height: 40vh;
+          }
+          .home-content-right .avatar-frame{
+               width: 30vh;
+               height: 30vh;
+               margin-top:4rem;
+               border-radius: 20%;
+          }     
+          .about{
+               grid-template-columns: 1fr;
+          }
+          .services h2{
+               margin-bottom:3rem;
+          }
+          .portfolio h2{
+               margin-bottom: 3rem;
+          }
+          .portfolio-container{
+               grid-template-columns: 1fr;
+               grid-template-columns: repeat(2,1fr);
+               place-items: center;
+          }
+          .footer{
+               justify-content: center;
+               flex-direction: column-reverse;
+               gap:1.5rem;
+          }    
+          
+     }
+     /* ========= Small Phone ============ */
+     @media (max-width:617px) {
+          .portfolio-container{
+               grid-template-columns: 1fr;
+               place-items: center;
+          }
+          .portfolio-box{
+               min-height: 30vh;
+               width: 85vw;
+          }
+     }
+     /* ========= Very Small Phone ============ */
+     @media (max-width: 450px) {
+          html{
+               font-size: 60%;
+          }
+          .navbar{
+               width:85vw;
+          }
+          .service-container{
+               padding:2rem 2rem;
+          }
+          .contact .contact-form .input-box input{
+               width:100%;
+          }
+     }
+     /* ========= Very Small Phone ============ */
+     @media (max-width:365px) {
+          .home-content-right img{
+               width:90vw;
+          }
+     }
+
+
+
